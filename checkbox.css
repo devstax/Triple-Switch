@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:200");
+
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    background: #ccc;
+}
+
+.fancy-checkbox {
+    display: block;
+    position: relative;
+    margin: 15px 0;
+    overflow: hidden;
+}
+
+.fancy-checkbox p {
+    padding: 10px;
+    margin: 0;
+    float: left;
+    line-height: 20px;
+}
+
+.fancy-checkbox input {
+    position: absolute;
+    visibility: hidden;
+}
+
+.fancy-checkbox input + i {
+    border: 2px solid #ccc;
+    width: 100px;
+    height: 40px;
+    padding: 2px;
+    float: left;
+    border-radius: 20px;
+    transition: all .25;
+}
+
+.fancy-checkbox input + i:after {
+    content: ' ';
+    background-color: #ccc;
+    float: left;
+    width: 50%;
+    height: 100%;
+    border-radius: inherit;
+    transition: 1s;
+}
+
+.fancy-checkbox input:checked + i {
+    border-color: #3cf;
+  }
+  .fancy-checkbox input:checked + i:after {
+    background-color: rgb(231, 51, 255);
+    margin-left: 50%;
+  }
+
+.fancy-checkbox.halo-bg input:checked + i {
+    border-color: #ff1493;
+}
+
+.fancy-checkbox.halo-bg input:checked + i:after {
+    background-color: #ff0033;
+}
+
+.fancy-checkbox.green input:checked + i {
+    border-color: #00ff7f;
+}
+
+.fancy-checkbox.green input:checked + i:after {
+    background-color: aquamarine;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 4px;
+    width: 600px;
+    margin: 30px auto;
+    padding: 20px 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 200px;
+}
